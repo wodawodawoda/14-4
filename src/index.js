@@ -77,7 +77,7 @@ class MoviesList extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1></h1>
+				<h1>Lista filmów:</h1>
 				<ul>
 					<Movie/>
 				</ul>
