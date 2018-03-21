@@ -6,10 +6,10 @@ import {Contact} from './Contact';
 
 export class Contacts extends React.Component {
 	render() {
-		console.log(this.props.items)
-		const contacts = this.props.items.map(function(contact) {
-			return <Contact item={contact} key={contact.id}/>
-		});
-		return <ul className="contacts container">{contacts}</ul>
+		return ( 
+			<ul className="contacts container">
+				<Contact items={this.props.items} />
+			</ul>
+		)
 	}
 }

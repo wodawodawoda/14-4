@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 import {ContactForm} from './ContactForm';
 import {Contacts} from './Contacts';
-import {data} from './data.js';
-import {dataTemplate} from './data.js';
+import {data, dataTemplate} from './data.js';
+import '../sass/index.sass';
 
 export class App extends React.Component {
 	render() {
@@ -18,4 +18,4 @@ export class App extends React.Component {
 	}
 };
 
-ReactDOM.render(<App/>, document.body)
+ReactDOM.render(<App/>, document.getElementById('app'))

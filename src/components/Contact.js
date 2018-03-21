@@ -3,14 +3,19 @@ import ReactDOM from "react-dom";
 import PropTypes from 'prop-types';
 
 export class Contact extends React.Component {
+	contact(){ 
+		return this.props.items.map(function(data, index) {
+			return ( 
+				<div className="contact container" key={data.id}>
+					<img src={data.img} alt="Zdjęcie {data.lastName}" className="contact__img"/>
+					<p className="contact__label">Imię: {data.firstName}</p>
+					<p className="contact__label">Nazwisko: {data.lastName}</p>
+					<a href="" className="contact__email">{data.email}</a>
+				</div>
+			)
+		});
+	}
 	render() {
-		return (
-			<div className="contact container">
-				<img src={this.props.item.img} alt="Zdjęcie {this.props.item.lastName}" className="contact__img"/>
-				<p className="contact__label">Imię: {this.props.item.firstName}</p>
-				<p className="contact__label">Nazwisko: {this.props.item.lastName}</p>
-				<a href="" className="contact__email">{this.props.item.email}</a>
-			</div>
-		)
+		return this.contact()
 	}
 }
