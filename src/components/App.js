@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PropTypes from 'prop-types';
 
 import {ContactForm} from './ContactForm';
 import {Contacts} from './Contacts';
 import {data, dataTemplate} from './data.js';
+
 import '../sass/index.sass';
 
 export class App extends React.Component {

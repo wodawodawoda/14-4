@@ -1,8 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import PropTypes from 'prop-types';
 
-// Jesteś debilem Mateusz...
 export class ContactForm extends React.Component { 
 	render() {
 		return (
@@ -15,7 +13,7 @@ export class ContactForm extends React.Component {
 		)
 	}
 }
-// ContactForm.propTypes {
-// 	contact: PropTypes.object.isRequired
-// }
+ContactForm.propTypes = {
+	contact: PropTypes.object.isRequired
+}
 
